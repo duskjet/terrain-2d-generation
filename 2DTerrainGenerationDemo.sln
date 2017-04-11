@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DTerrainGenerationDemo", "2DTerrainGenerationDemo\2DTerrainGenerationDemo.csproj", "{DFA7961C-BF10-45C2-BC69-98F525818E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics.MidpointDisplacement", "MidpointDisplacement\Graphics.MidpointDisplacement.csproj", "{7546F6F4-96D3-4BFE-8E8B-4AC7B0466589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics.CellularAutomata", "CellularAutomata\Graphics.CellularAutomata.csproj", "{8392168F-DE5E-4C65-8F06-6850276BFDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics.Common", "2DGraphics.Common\Graphics.Common.csproj", "{10CDD86D-A175-4A18-AEE5-F4D823B45B4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA7961C-BF10-45C2-BC69-98F525818E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA7961C-BF10-45C2-BC69-98F525818E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA7961C-BF10-45C2-BC69-98F525818E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA7961C-BF10-45C2-BC69-98F525818E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7546F6F4-96D3-4BFE-8E8B-4AC7B0466589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7546F6F4-96D3-4BFE-8E8B-4AC7B0466589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7546F6F4-96D3-4BFE-8E8B-4AC7B0466589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7546F6F4-96D3-4BFE-8E8B-4AC7B0466589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8392168F-DE5E-4C65-8F06-6850276BFDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8392168F-DE5E-4C65-8F06-6850276BFDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8392168F-DE5E-4C65-8F06-6850276BFDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8392168F-DE5E-4C65-8F06-6850276BFDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CDD86D-A175-4A18-AEE5-F4D823B45B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CDD86D-A175-4A18-AEE5-F4D823B45B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CDD86D-A175-4A18-AEE5-F4D823B45B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CDD86D-A175-4A18-AEE5-F4D823B45B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
