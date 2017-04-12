@@ -24,15 +24,26 @@ namespace TerrainGenerationDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        CellularAutomata automata;
+
         public MainWindow()
         {
             InitializeComponent();
+            automata = new CellularAutomata();
+        }
 
-            int width   = 1024, 
-                height  = 768;
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            int width = 150,
+                height = 150;
 
             //var pixelmap = new MidpointDisplacement().Generate(new MidpointDisplacementOptions { Width = width, Height = height });
-            var pixelmap = new CellularAutomata().Generate(new CellularAutomataOptions { Width = width, Height = height });
+            var pixelmap = automata.Generate(new CellularAutomataOptions {
+                Width = width,
+                Height = height,
+                Born = new int[] { 6, 7, 8 },
+                Survive = new int[] { 4, 5, 6, 7, 8 }
+            });
 
             this.image.Source = pixelmap.ToWriteableBitmap();
         }

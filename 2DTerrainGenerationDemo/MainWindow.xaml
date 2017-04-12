@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TerrainGenerationDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="768" Width="1024">
+        Title="MainWindow" Height="768" Width="1115.047">
     <Grid>
-        <Image Height="768" Width="1024" x:Name="image" Margin="0" RenderOptions.EdgeMode="Aliased"/>
+        <Image Height="768" Width="1024" x:Name="image" Margin="0,0,0,-31" RenderOptions.EdgeMode="Aliased" HorizontalAlignment="Left"/>
+        <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Margin="1024,10,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
 
     </Grid>
 </Window>
