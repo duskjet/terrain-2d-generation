@@ -33,7 +33,7 @@ namespace Graphics.CellularAutomata
             return map;
         }
 
-        private bool IntToBoolean(int value) => value < 40;
+        private bool IntToBoolean(int value) => value < 50;
 
         private PixelMap GenerateMap(CellularAutomataOptions options)
         {
@@ -61,13 +61,13 @@ namespace Graphics.CellularAutomata
 
                     var aliveNeighbors = neighbors.Count(alive => alive == true);
 
-                    if (options.Born.Contains(aliveNeighbors))
+                    if (!map[x, y] && options.Born.Contains(aliveNeighbors) || map[x, y] && options.Survive.Contains(aliveNeighbors))
                         mapCopy.Set(x, y, true);
 
-                    if (options.Survive.Contains(aliveNeighbors))
-                        mapCopy.Set(x, y, true);
-                    else
-                        mapCopy.Set(x, y, false);
+                    //if (options.Survive.Contains(aliveNeighbors))
+                    //    mapCopy.Set(x, y, true);
+                    //else
+                    //    mapCopy.Set(x, y, false);
                 }
 
             map = mapCopy;
@@ -78,6 +78,7 @@ namespace Graphics.CellularAutomata
     public class CellularAutomataOptions : GraphicOptions
     {
         public int[] Born { get; set; }
+        public int Iterations { get; set; }
         public int[] Survive { get; set; }
     }
 }

@@ -34,15 +34,16 @@ namespace TerrainGenerationDemo
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            int width = 150,
-                height = 150;
+            int width = 200,
+                height = 200;
 
             //var pixelmap = new MidpointDisplacement().Generate(new MidpointDisplacementOptions { Width = width, Height = height });
             var pixelmap = automata.Generate(new CellularAutomataOptions {
                 Width = width,
                 Height = height,
                 Born = new int[] { 6, 7, 8 },
-                Survive = new int[] { 4, 5, 6, 7, 8 }
+                Survive = new int[] { 3, 4, 5, 6, 7, 8 },
+                Iterations = 15
             });
 
             this.image.Source = pixelmap.ToWriteableBitmap();
